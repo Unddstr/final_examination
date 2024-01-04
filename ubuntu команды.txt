@@ -1,0 +1,39 @@
+1
+
+cat > Домашние_животные
+собака
+кошка
+хомяк
+
+cat > Вьючные_животные
+лошади
+верблюды
+ослы
+
+ls
+
+cat Домашние_животные Вьючные_животные > Животные
+
+cat Животные
+
+mv Животные Друзья_человека
+
+2
+
+mkdir Коталог_животных
+
+mv Друзья_человека Коталог_животных
+
+cd Коталог_животных/
+
+3
+
+sudo wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.29-1_all.deb
+
+sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+
+sudo apt-get update
+
+4
+
+sudo dpkg -r mysql-apt-config
